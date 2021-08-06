@@ -4,11 +4,11 @@
 # importing important packages
 import requests
 from bs4 import BeautifulSoup
-from pprint import pprint
+from print import print
 
 # US presidents list url
 
-url = 'https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States'
+url ='https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States'
 
 response = requests.get(url)
 content = response.content
@@ -29,7 +29,7 @@ for row in rows:
            president = cell.find('b').find('a').text
            presidents.append(president)
            
-pprint(presidents)
+print("presidents")
 
 
 
