@@ -5,3 +5,6 @@ print(2**2)
 print(2%2)
 print(2//2)
 
+print("Hello World!")
+print("Anthony lives in the US")
+print("He also serves in the army and serious with his programming code!")
